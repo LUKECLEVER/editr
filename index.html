@@ -1,0 +1,50 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>瓜瓜在线编辑器</title>
+<meta name="Description" content="在线编辑器|编辑器|代码编辑器|陆尧瓜瓜|瓜瓜|陆尧顶瓜瓜">
+<link rel="shortcut icon" href="https://source.luyaoguagua.top/ico/favicon.ico" >
+<link rel="stylesheet" href="codemirror/lib/codemirror.css">
+<link rel="stylesheet" href="codemirror/theme/monokai.css">
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	background: #222;
+}
+
+/* Codemirror */
+.Codemirror {
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+}
+
+</style>
+
+</head>
+<body>
+
+<script src="codemirror/lib/codemirror.js"></script>
+<script src="codemirror/addon/edit/closetag.js"></script>
+<script src="codemirror/mode/xml/xml.js"></script>
+<script src="codemirror/mode/javascript/javascript.js"></script>
+<script src="codemirror/mode/css/css.js"></script>
+<script src="codemirror/mode/htmlmixed/htmlmixed.js"></script>
+<script src="code-blast.js"></script>
+
+<script>
+window.cm = CodeMirror(document.body, {
+	lineNumbers: true,
+	mode:  "htmlmixed",
+	theme: 'monokai',
+	lineWrapping: true,
+	autofocus: true,
+	tabSize: 2,
+	value: "瓜瓜在线编辑器\n适用浏览器：360、FireFox、Chrome、Opera、傲游、搜狗、世界之窗. 不支持Safari、IE8及以下浏览器。",
+	autoCloseTags: true,
+	blastCode: { effect: 2 },
+});
+</script>
+</body>
+</html>
